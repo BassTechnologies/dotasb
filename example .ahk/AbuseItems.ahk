@@ -14,7 +14,6 @@ tick := !d - !i := !i
 abuseitems(tick, "2", "2", "1", 5, 10)
 abuseitems(tick, "2", "4", "2", 5, 10)
 abuseitems(tick, "2", "6", "3", 5, 10)
-; В функции setslotcoords() мы не указали координаты 6-го слота, однако мы их указали вручную функцией bhsetslotcoords()
 return
 
 
