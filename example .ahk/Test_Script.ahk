@@ -1,3 +1,4 @@
 f5::
-msgbox
+var_hello = asd
+msgbox % var_hello
 exitapp
