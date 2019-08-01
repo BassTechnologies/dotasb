@@ -17,7 +17,11 @@
 ; Если вы хотите дать ссылку на библиотеку - отправляйте ссылку на оригинальный GitHub, чтобы пользователи не использовали старые версии.
 ;##############
 
-
+;##############
+; Modified 31.07.2019
+; Changelog:
+; config(scriptname) added.
+;##############
 
 ; Pid of application dota 2
 global dota_id
@@ -52,6 +56,8 @@ global SkillKeys := []
 ; 											# CoordMode's
 ; 											# Создание директивы для файлов скрипта / %A_MyDocuments%\DotaScriptsBuilder
 ; 											# Определение PID'a процесса доты 2.
+;	- config(scriptname)	- Чтение конфига
+;											# scriptname - имя папки скрипта
 ; ----------------------------------------------------------------------------------------------------------------
 ; #
 ; Функции для взаимодействия с экраном / Function to interact with the screen
@@ -141,6 +147,19 @@ SetSettings()
 	SetWorkingDir, %A_MyDocuments%\DotaScriptsBuilder
 	WinGet, dota_id, PID, Dota 2
 }
+
+config(scriptname)
+	{
+		IfExist, %a_mydocuments%\DotaSL\%scriptname%\options.txt
+			Loop, read, %a_mydocuments%\DotaSL\%scriptname%\options.txt
+		if regexmatch(A_LoopReadLine, "(.*) := (.*)", ea)
+		{
+			IfInString, A_LoopReadLine, var_loadconfig := 0
+				return
+			e := "ea2"
+			%ea1% := ea2
+		}
+	}
 
 PixelTrigger(savecrds, slotnumb, R, R2)
 {
