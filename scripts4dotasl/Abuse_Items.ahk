@@ -38,6 +38,7 @@ var_key_start := "!x"
 
 
 
+#NoTrayIcon
 #Include %A_AppData%
 #Include DotaScriptsBuilder.ahk
 
