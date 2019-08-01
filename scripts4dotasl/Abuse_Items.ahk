@@ -31,7 +31,6 @@ var_y2_slotbackpack3 := 1067
 var_usingslot1 := 2
 var_usingslot2 := 4
 var_usingslot3 := 6
-var_key_reload := "!F10"
 var_key_start := "!x"
 ; ////////////////////////
 ; ////////////////////////
@@ -73,6 +72,3 @@ abuseitems(tick, "2", "2", "1", 15, 20)
 abuseitems(tick, "2", "4", "2", 15, 20)
 abuseitems(tick, "2", "6", "3", 15, 20)
 return
-
-Reload:
-Reload
