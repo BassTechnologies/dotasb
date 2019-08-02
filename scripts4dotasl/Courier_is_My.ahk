@@ -1,7 +1,7 @@
-﻿; ////////////////////////
+; ////////////////////////
 ; Script for [DOTASL] Dota Scripts Loader
 ; ////////////////////////
-var_loadconfig := 0
+var_loadconfig := "0"
 ;~ Importantly! This var must be a first! (4 check load config or not)
 
 var_cour_use := "F3"
@@ -19,7 +19,7 @@ var_key_start := "!F3"
 #Include DotaScriptsBuilder.ahk
 
 SetSettings()
-config("Courier_is_My")
+config("Courier_Is_My")
 
 Hotkey, %var_key_start%, start, on
 return
