@@ -45,7 +45,6 @@ var_key_start := "!x"
 SetSettings()
 config("Abuse_Items")
 
-Hotkey, %var_key_reload%, Reload, on
 Hotkey, %var_key_start%, start, on
 
 var_type := "inventory"
