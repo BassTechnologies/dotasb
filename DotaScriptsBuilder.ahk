@@ -155,7 +155,7 @@ config(scriptname)
 		if regexmatch(A_LoopReadLine, "(.*) := ""(.*)""", ea)
 		{
 			IfInString, A_LoopReadLine, var_loadconfig := 0
-				return
+				break
 			e := "ea2"
 			%ea1% := ea2
 		}
