@@ -45,7 +45,6 @@ var_key_start := "!x"
 SetSettings()
 config("Abuse_Items")
 
-#if WinActive("Dota 2")
 Hotkey, %var_key_start%, start, on
 
 var_type := "inventory"
@@ -68,6 +67,8 @@ loop, 3
 return
 
 start:
+IfWinNotActive, Dota 2
+	return
 tick := !d - !i := !i
 abuseitems(tick, "2", "2", "1", 15, 20)
 abuseitems(tick, "2", "4", "2", 15, 20)
