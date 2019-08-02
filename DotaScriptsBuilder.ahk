@@ -149,17 +149,17 @@ SetSettings()
 }
 
 config(scriptname)
+{
+	IfExist, %a_mydocuments%\DotaSL\%scriptname%\options.txt
+		Loop, read, %a_mydocuments%\DotaSL\%scriptname%\options.txt
+	if regexmatch(A_LoopReadLine, "(.*) := ""(.*)""", ea)
 	{
-		IfExist, %a_mydocuments%\DotaSL\%scriptname%\options.txt
-			Loop, read, %a_mydocuments%\DotaSL\%scriptname%\options.txt
-		if regexmatch(A_LoopReadLine, "(.*) := ""(.*)""", ea)
-		{
-			IfInString, A_LoopReadLine, var_loadconfig := 0
-				return
-			e := "ea2"
-			%ea1% := ea2
-		}
+		IfInString, A_LoopReadLine, var_loadconfig := "0"
+			return
+		e := "ea2"
+		%ea1% := ea2
 	}
+}
 
 PixelTrigger(savecrds, slotnumb, R, R2)
 {
