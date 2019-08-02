@@ -13,7 +13,7 @@ var_key_start := "!F3"
 
 
 
-
+#SingleInstance force
 #NoTrayIcon
 #Include %A_AppData%
 #Include DotaScriptsBuilder.ahk
