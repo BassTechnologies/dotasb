@@ -41,11 +41,11 @@ var_key_start := "!x"
 #NoTrayIcon
 #Include %A_AppData%
 #Include DotaScriptsBuilder.ahk
-#IfWinActive Dota 2
 
 SetSettings()
 config("Abuse_Items")
 
+#if WinActive("Dota 2")
 Hotkey, %var_key_start%, start, on
 
 var_type := "inventory"
