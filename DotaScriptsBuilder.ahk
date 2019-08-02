@@ -152,7 +152,7 @@ config(scriptname)
 	{
 		IfExist, %a_mydocuments%\DotaSL\%scriptname%\options.txt
 			Loop, read, %a_mydocuments%\DotaSL\%scriptname%\options.txt
-		if regexmatch(A_LoopReadLine, "(.*) := (.*)", ea)
+		if regexmatch(A_LoopReadLine, "(.*) := ""(.*)""", ea)
 		{
 			IfInString, A_LoopReadLine, var_loadconfig := 0
 				return
