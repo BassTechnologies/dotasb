@@ -5,7 +5,7 @@ var_loadconfig := "0"
 ;~ Importantly! This var must be a first! (4 check load config or not)
 
 var_cour_use := "F3"
-var_key_start := "!F3"
+var_key_start := "!F1"
 ; ////////////////////////
 ; ////////////////////////
 ; ////////////////////////
