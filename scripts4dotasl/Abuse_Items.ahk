@@ -39,7 +39,7 @@ var_key_start := "!x"
 ; ////////////////////////
 
 
-
+#SingleInstance force
 #NoTrayIcon
 #Include %A_AppData%
 #Include DotaScriptsBuilder.ahk
