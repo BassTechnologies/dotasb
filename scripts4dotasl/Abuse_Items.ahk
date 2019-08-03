@@ -4,7 +4,7 @@
 var_loadconfig := "0"
 ;~ Importantly! This var must be a first! (4 check load config or not)
 
-MovecursorBack := "1"
+var_MovecursorBack := "1"
 
 var_x1_slot4abuse1 := "1180"
 var_x2_slot4abuse1 := "1235"
