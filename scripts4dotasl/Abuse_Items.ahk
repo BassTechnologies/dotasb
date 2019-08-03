@@ -76,10 +76,11 @@ IfWinNotActive, Dota 2
 tick := !d - !i := !i
 MouseGetPos, m1, m2
 abuseitems(tick, "1", "2", "1", 15, 20)
-sleep 10
+sleep 20
 abuseitems(tick, "1", "4", "2", 15, 20)
-sleep 10
+sleep 20
 abuseitems(tick, "1", "6", "3", 15, 20)
+sleep 20
 if var_MovecursorBack
 	MouseMove, m1, m2, 1
 return
