@@ -80,6 +80,6 @@ sleep 10
 abuseitems(tick, "1", "4", "2", 15, 20)
 sleep 10
 abuseitems(tick, "1", "6", "3", 15, 20)
-if MovecursorBack
+if var_MovecursorBack
 	MouseMove, m1, m2, 1
 return
