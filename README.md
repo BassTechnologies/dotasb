@@ -1,4 +1,4 @@
-# Dota Scripts Builder
+# Dota Scripts Builder / Actual repository see in bio
 AutoHotkey library for writing dota 2 scripts.
 
 YouTube:
